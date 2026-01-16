@@ -1,0 +1,318 @@
+/* While Not Halting — Em's Font */
+/* An ode to Ogilvy's clarity and Trotter's precision */
+
+@font-face {
+    font-family: 'While Not Halting';
+    src: url('fonts/WhileNotHalting-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'While Not Halting';
+    src: url('fonts/WhileNotHalting-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'While Not Halting';
+    src: url('fonts/WhileNotHalting-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --black: #0c0c0c;
+    --white: #fafafa;
+    --gray-50: #f7f7f7;
+    --gray-100: #ededed;
+    --gray-200: #d4d4d4;
+    --gray-300: #b0b0b0;
+    --gray-400: #8a8a8a;
+    --gray-500: #6b6b6b;
+    --gray-600: #4a4a4a;
+    --gray-700: #333333;
+    --gray-800: #1f1f1f;
+    --gray-900: #141414;
+}
+
+html {
+    font-size: 18px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'While Not Halting', 'Berkeley Mono', 'SF Mono', monospace;
+    background-color: var(--black);
+    color: var(--gray-200);
+    line-height: 1.8;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 0.01em;
+}
+
+/* Container — Ogilvy believed in the single column */
+.terminal {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 6rem 2rem;
+}
+
+/* Header */
+.terminal-header {
+    margin-bottom: 4rem;
+}
+
+.prompt {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+
+.cursor {
+    display: none;
+}
+
+/* Content */
+.content {
+    padding: 0;
+}
+
+/* Hero — The headline is everything */
+.hero {
+    margin-bottom: 5rem;
+}
+
+.title {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: var(--gray-400);
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.03em;
+}
+
+.subtitle {
+    color: var(--white);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+/* Sections — White space is the plate */
+.section {
+    margin-bottom: 4rem;
+}
+
+.section h2 {
+    color: var(--gray-500);
+    font-size: 0.7rem;
+    font-weight: 400;
+    margin-bottom: 1.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+/* Body copy — Ogilvy: make it readable */
+.output {
+    padding: 0;
+}
+
+.output p {
+    margin-bottom: 1.25rem;
+    color: var(--gray-200);
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+.output p:last-child {
+    margin-bottom: 0;
+}
+
+.highlight {
+    color: var(--white);
+}
+
+/* Philosophy list — Trotter's mise en place */
+.file-list .file {
+    padding: 0.6rem 0;
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1rem;
+    border-bottom: 1px solid var(--gray-800);
+}
+
+.file-list .file:last-child {
+    border-bottom: none;
+}
+
+.permissions {
+    color: var(--gray-600);
+    font-size: 0.85rem;
+    min-width: 2rem;
+}
+
+.filename {
+    color: var(--gray-200);
+}
+
+/* Code Block — The recipe */
+.code-block {
+    background: var(--gray-900);
+    padding: 2rem;
+    border-left: 2px solid var(--gray-700);
+}
+
+.code-block pre {
+    color: var(--gray-300);
+    font-size: 0.9rem;
+    overflow-x: auto;
+    line-height: 1.7;
+}
+
+/* Timeline — The tasting menu */
+.timeline .entry {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--gray-800);
+}
+
+.timeline .entry:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.timeline .date {
+    display: block;
+    color: var(--gray-500);
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.08em;
+}
+
+.timeline .role {
+    display: block;
+    color: var(--white);
+    font-weight: 400;
+    font-size: 1.05rem;
+    margin-bottom: 0.25rem;
+}
+
+.timeline .company {
+    display: block;
+    color: var(--gray-400);
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+}
+
+.timeline .entry p {
+    color: var(--gray-400);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* Quote — The signature dish */
+.quote-block blockquote {
+    color: var(--white);
+    font-size: 1.15rem;
+    font-style: normal;
+    line-height: 1.8;
+    padding: 2rem 0;
+    border-top: 1px solid var(--gray-700);
+    border-bottom: 1px solid var(--gray-700);
+}
+
+.quote-block .signature {
+    color: var(--gray-500);
+    font-size: 0.85rem;
+    margin-top: 1.5rem;
+}
+
+/* Contact — The reservation */
+.contact-block p {
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.contact-block .var {
+    color: var(--gray-500);
+    display: inline-block;
+    min-width: 100px;
+}
+
+.contact-block .value {
+    color: var(--gray-200);
+}
+
+/* Footer — The check */
+.footer {
+    margin-top: 6rem;
+    padding-top: 3rem;
+    border-top: 1px solid var(--gray-800);
+}
+
+.font-credit {
+    color: var(--gray-500);
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.tagline {
+    color: var(--gray-600);
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+/* Responsive — Every plate fits the table */
+@media (max-width: 600px) {
+    html {
+        font-size: 16px;
+    }
+
+    .terminal {
+        padding: 4rem 1.5rem;
+    }
+
+    .prompt {
+        font-size: 1.25rem;
+    }
+
+    .contact-block .var {
+        display: block;
+        margin-bottom: 0.25rem;
+    }
+}
+
+/* Scrollbar — Invisible service */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--black);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gray-800);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gray-700);
+}
+
+/* Selection — The amuse-bouche */
+::selection {
+    background: var(--white);
+    color: var(--black);
+}
